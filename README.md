@@ -42,7 +42,9 @@ This folder structure applies to `internvl-38b` and `Qwen2-VL-72B`. For `gpt-4o`
 - `fewshot` - contains all of the files used to evaluate the model on the few-shot setup of the SVRT
 - `interactive` - contains the files used to evaluate on the human-like setup of the SVRT, which is reported in the Supplmental Information section of the paper
 
-Inside `fewshot` and `interactive`, the folder structure is nearly identical as `claude-3.5-sonnet`. You will see filenames with the suffixes `cot1`, `cot2`, and `cot3`, referring to chain-of-thought levels 1, 2, and 3, as detailed in the paper. We did not evaluate non-gpt-4 models on different levels of chain-of-thought prompting, as it did not improve classification accuracy. You will also see a file that ends in the suffix `swap`. This refers to the experiment when we swapped the category answer labels for each image to test the hypothesis that the models' performance on the datasets could be due to memorization of the datasets (see Supplemental Information).
+Inside `fewshot` and `interactive`, the folder structure is nearly identical as `claude-3.5-sonnet`. You will see filenames with the suffixes `cot1`, `cot2`, and `cot3`, referring to chain-of-thought levels 1, 2, and 3, as detailed in the paper. We did not evaluate non-gpt-4 models on different levels of chain-of-thought prompting, as it did not improve classification accuracy. 
+
+You will also see a file that ends in the suffix `swap`. This refers to the experiment when we swapped the category answer labels for each image to test the hypothesis that the models' performance on the datasets could be due to memorization of the datasets (see Supplemental Information).
 
 ## Evaluating Vision-Language Models
 To evaluate the models on scene classification, open any file that starts with the prefix `run_`. Input your API key, base, and deployment name for the closed-source models. You do not need to do so for the open-source models (Qwen and InternVL). Save the file, and then run it. If you encounter any issues, please do not hesitate to email me at `andrewlee0@g.ucla.edu`. I would be more than happy to assist with any errors that arise!
