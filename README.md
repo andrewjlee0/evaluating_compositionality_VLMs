@@ -21,12 +21,14 @@ The repository is divided into two main folders:
 1. Scene generation
 2. Scene classification
 
+### Scene Generation
 Under "scene_generation", you will find all files related to our evaluation of DALL-E 3. Here, you will find three subfolders: stimuli, prompt_probabilities, and dalle_agreement_data_anlaysis_cleaned. 
 
 1. stimuli - refers to the prompts used for each of our three experiments
 2. prompt_probabilities - contains a single file that generates log-probabilities for all prompts using various OpenAI models
 3. dalle_agreement_data_analysis_cleaned - contains the data from each our of human experiments (evaluating DALL-E 3's images) and the analysis code that examines this data
 
+### Scene Classification
 Under "scene_classification", you will find all the files related to our evaluation of chat models. There are two folders, one for each scene classification dataset: svrt and bongard_hoi. Both have a similar directory structure. Under the svrt folder as an example, you will then see a folder for each of the models tested, for human data, and for a combined analysis across models and humans. Please look at "claude-3.5-sonnet" as a representative folder:
 
 Here you will see the following items:
