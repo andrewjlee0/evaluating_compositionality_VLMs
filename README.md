@@ -29,9 +29,7 @@ Under `scene_generation`, you will find all files related to our evaluation of D
 3. `dalle_agreement_data_analysis_cleaned` - contains the data from each our of human experiments (evaluating DALL-E 3's images) and the analysis code that examines this data
 
 ### Scene Classification
-Under `scene_classification`, you will find all the files related to our evaluation of chat models. There are two folders, one for each scene classification dataset: `svrt` and `bongard_hoi`. Both have a similar directory structure. Under `svrt` as an example, you will then see a folder for each of the models tested, for human data, and for a combined analysis across models and humans. Please look at `claude-3.5-sonnet` as a representative folder:
-
-Here you will see the following items:
+Under `scene_classification`, you will find all the files related to our evaluation of chat models. There are two folders, one for each scene classification dataset: `svrt` and `bongard_hoi`. Both have a similar directory structure. Under `svrt` as an example, you will then see a folder for each of the models tested, for human data, and for a combined analysis across models and humans. Please look at `claude-3.5-sonnet` as a representative folder. There, you will see the following items:
 
 1. `run_fewshot_cot0.py` - evalautes Claude on the SVRT dataset, without chain-of-thought prompting. Here, the suffix `cot0` refers to "no chain-of-thought."
 2. `utils_fewshot_cot0.py` - contains various helper functions utilized by `run_fewshot_cot0.py`
